@@ -1,0 +1,12 @@
+version: "3.8" 
+services:
+  mock-api-1:
+    image: mock-api-1
+    build: ./mock-api-1
+    ports:
+      - "8080:80"
+  mock-api-2:
+    image: mock-api-2
+    build: ./mock-api-2
+    ports:
+      - "8081:80"
